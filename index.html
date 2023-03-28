@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+    <script src="https://kit.fontawesome.com/3e3fac7f5e.js" crossorigin="anonymous"></script>   
+    <!-- above link is added for the font awesome website -->
+    <link rel="shortcut icon" type="image/x-icon" href="logo.jpg">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Nik.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>   <!-- for clicking on menu making the website scrollable-->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">PortFolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi,I'm <span>Nikhil</span><br>Shrirao From PICT</h1>
+            </div>
+        </div>
+    </div>
+<!-- -----------------------------HTML for About Section in the Website---------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">  
+                    <!-- second person image -->
+                    <img src="Nikhil_photo-1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet labore libero, neque hic, laborum consectetur, corrupti quod quo eius magnam assumenda porro dolores vel dolorem? Beatae optio distinctio accusantium quidem mollitia facere accusamus minima id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ratione fuga omnis dicta odit veritatis expedita.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Developement</span><br>Web App Developement</li>
+                            <li><span>App Developement</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at Education
+                            Institute</li>
+                            <li><span>2019 -2021</span><br>Team Lead at StartApp LLC</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin
+                            Digital Ltd.</li>
+                            <li><span>2016 -2017</span><br>Internship at eKart eCommerce</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>Designing Web/App interfaces</li>
+                            <li><span>2016</span><br>BBA from MIT Banglore</li>
+                            <li><span>2014</span><br>BBA from ISM Banglore</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------Services HTML-------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Front End Web Design</h2>
+                    <p>HyperText Markup Language (HTML) is the backbone of any website development process, without which a web page does not exist.Cascading Style Sheets (CSS) controls the presentation aspect of the site and allows your site to have its own unique look.</p>
+                    <a href="https://en.wikipedia.org/wiki/Front-end_web_development" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Full Stack Web Developement</h2>
+                    <p>Full stack development is the end-to-end development of applications. It includes both the front end and back end of an application. The front end is usually accessed by a client, and the back end forms the core of the application where all the business logic is applied.</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_development" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Back End Web Developement</h2>
+                    <p>Back-end development references a client server architecture common in ecommerce. A backend developer could just be focused on a database and providing an API to it or on a server language like PHP and those mentioned so far and provide an API to it.</p>
+                    <a href="https://en.wikibooks.org/wiki/Web_Development/What_is_a_backend%3F" target="_blank">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------Portfolio-------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="background.jpg" >
+                    <div class="layer">
+                        <h3>Quiz App</h3>
+                        <p>I make this website name quiz app website in which questions are asked and we have to give the answer for this questions.This consist of the languages HTML,CSS and JS</p>
+                        <a href="https://dailyfunkrunal.blogspot.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>  <!--adding the icon external-link-alt from font awesome website-->
+                    </div>
+                </div>                    <!--  addition of the images is remaining-->
+                <div class="work">
+                    <img src="back.jpg" >
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ut ipsa hic. Vero facere voluptas nihil, iure odio iste cumqu?</p>
+                        <a href="https://funnik2004.blogspot.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>  <!--adding the icon external-link-alt from font awesome website-->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="top-line-management-login-background-1.jpg" >
+                    <div class="layer">
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>This is the game type website I made using HTML,CSS and JS which is tic tac toe which we were played when we are in schools for time pass amomg the group of two</p>
+                        <a href="https://dailyfunnikhil.blogspot.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>  <!--adding the icon external-link-alt from font awesome website-->
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.google.com/search?q=list+of+the+all+domains+related+with+computer+csience+feild&rlz=1C1UEAD_enIN1036IN1036&oq=list+of+the+all+domains+related+with+computer+csience+feild&aqs=chrome..69i57j33i10i160.24724j0j7&sourceid=chrome&ie=UTF-8" target="_blank" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- -----------------------contact form ------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>shriraonikhil340@gmail.com.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>8432070944</p>
+                    <div class="social-icons">  <!-- Adding the social media icons insta,face,linkedin,-->
+                        <a href="https://www.facebook.com/profile.php?id=100084793694791" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>  <!--face-->
+                        <a href="https://twitter.com/nikhilshri2004" target="_blank"><i class="fa-brands fa-twitter fa-beat"></i></a>     <!-- twitter-->
+                        <a href="https://www.instagram.com/shriraonikhils/?next=%2F" target="_blank"><i class="fa-brands fa-instagram"></i></a>     <!--insta-->
+                        <a href="https://www.linkedin.com/in/nikhil-shrirao-94593b234" target="_blank"><i class="fa-brands fa-linkedin"></i></a>     <!--linked-->
+                    </div>
+                    <a href="College ID.pdf" download class="btn btn2">Download CV</a>    <!--Adding the file path for downloading the cv-->
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">   <!-- message copied here from the contact form details in google sheet-->
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" requi+red>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Nikhil. Made With <i class="fa-solid fa-heart"></i>Own</p>
+        </div>
+    </div>
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById('sidemenu')
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+<script>
+    // const scriptURL = '<SCRIPT URL>'   //adding the url that get from appscript in place of SCRIPT URL
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzHSMm0qPm083A_ob5ausekMoqePa89oqsQbi4iV0-XO_xBJWL73loiGcxgAaEq3YzxiQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

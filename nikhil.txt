@@ -1,0 +1,2 @@
+for making the contact form working we are making the google sheet in which when the contact form will filled and 
+submit then it will automatically fill the google sheet that's the logic for submission of the contact form
